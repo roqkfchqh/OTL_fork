@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c9238d-cb39-4efa-bd08-d1ffae02f8e8" name="변경" comment="why_an_dw_em_TT" />
+    <list default="true" id="35c9238d-cb39-4efa-bd08-d1ffae02f8e8" name="변경" comment="why_an_dw_em_TT">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/classes/com.example.otl_server.OtlServerApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/classes/com.example.otl_server.OtlServerApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/packages/com.example.otl_server.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/packages/com.example.otl_server.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/TEST-com.example.otl_server.OtlServerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/TEST-com.example.otl_server.OtlServerApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/gradlew" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,18 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "roqkfchqh"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;roqkfchqh&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/roqkfchqh/OTL_fork.git",
-    "accountId": "406e305a-f084-46e9-b7c4-8229c1b3aa3d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/roqkfchqh/OTL_fork.git&quot;,
+    &quot;accountId&quot;: &quot;406e305a-f084-46e9-b7c4-8229c1b3aa3d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -41,7 +57,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "Spring Boot.OtlServerApplication.executor": "Run",
+    "git-widget-placeholder": "dev__server",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/leecy/Desktop/OTL_fork-dev_server/otl-server",
     "node.js.detected.package.eslint": "true",
@@ -79,7 +96,8 @@
       <option name="presentableId" value="Default" />
       <updated>1731931076698</updated>
       <workItem from="1731931077853" duration="445000" />
-      <workItem from="1731931542718" duration="967000" />
+      <workItem from="1731931542718" duration="1236000" />
+      <workItem from="1731935890563" duration="975000" />
     </task>
     <task id="LOCAL-00001" summary="why_an_dw_em_TT">
       <option name="closed" value="true" />

@@ -23,6 +23,7 @@ public class UserController {
 
     @GetMapping("/success")
     public String showSuccessPage() {
+
         return "success"; // templates/success.html 렌더링
     }
 }
