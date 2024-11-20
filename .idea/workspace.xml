@@ -5,21 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c9238d-cb39-4efa-bd08-d1ffae02f8e8" name="변경" comment="why_an_dw_em_TT">
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/CommentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/otl-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/otl-server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/classes/java/main/com/example/otl_server/OtlServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/classes/java/main/com/example/otl_server/OtlServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/classes/java/main/com/example/otl_server/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/classes/java/main/com/example/otl_server/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/classes/java/test/com/example/otl_server/OtlServerApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/classes/com.example.otl_server.OtlServerApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/classes/com.example.otl_server.OtlServerApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/classes/com.example.otl_server.OtlServerApplicationTests.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/base-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/packages/com.example.otl_server.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/packages/com.example.otl_server.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/TEST-com.example.otl_server.OtlServerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/TEST-com.example.otl_server.OtlServerApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/packages/com.example.otl_server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/TEST-com.example.otl_server.OtlServerApplicationTests.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/OtlServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/OtlServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/otl-server/src/test/java/com/example/otl_server/OtlServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/test/java/com/example/otl_server/OtlServerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +44,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +63,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/roqkfchqh/OTL_fork.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:roqkfchqh/OTL_fork.git&quot;,
     &quot;accountId&quot;: &quot;406e305a-f084-46e9-b7c4-8229c1b3aa3d&quot;
   }
 }</component>
@@ -50,12 +71,17 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2p1QPDDnjGoy2u5eZi1L66CoNnS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.OtlServerApplication.executor": "Run",
     "git-widget-placeholder": "dev__server",
@@ -98,6 +124,8 @@
       <workItem from="1731931077853" duration="445000" />
       <workItem from="1731931542718" duration="1236000" />
       <workItem from="1731935890563" duration="975000" />
+      <workItem from="1732086490751" duration="206000" />
+      <workItem from="1732086769381" duration="5652000" />
     </task>
     <task id="LOCAL-00001" summary="why_an_dw_em_TT">
       <option name="closed" value="true" />
