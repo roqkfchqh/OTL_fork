@@ -67,5 +67,61 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:3.3.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:3.3.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:3.3.5" level="project" />
+    <orderEntry type="module-library">
+      <library name="spring-boot-starter-data-jpa">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-data-jpa-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-aop-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-autoconfigure-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-logging-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/logback-classic-1.5.11.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/logback-core-1.5.11.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/log4j-to-slf4j-2.23.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/log4j-api-2.23.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jul-to-slf4j-2.0.16.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/snakeyaml-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-aop-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/aspectjweaver-1.9.22.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-jdbc-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/HikariCP-5.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-jdbc-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/hibernate-core-6.5.3.Final.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.persistence-api-3.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.transaction-api-2.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jboss-logging-3.5.0.Final.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/hibernate-commons-annotations-6.0.6.Final.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jandex-3.1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/classmate-1.5.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/byte-buddy-1.14.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.xml.bind-api-4.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.activation-api-2.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jaxb-runtime-4.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jaxb-core-4.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/angus-activation-2.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/txw2-4.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/istack-commons-runtime-4.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.inject-api-2.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/antlr4-runtime-4.13.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-data-jpa-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-data-commons-3.3.5.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-orm-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-context-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-expression-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/micrometer-observation-1.12.11.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/micrometer-commons-1.12.11.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-tx-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-beans-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-core-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-jcl-6.1.14.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.annotation-api-2.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/slf4j-api-2.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-aspects-6.1.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

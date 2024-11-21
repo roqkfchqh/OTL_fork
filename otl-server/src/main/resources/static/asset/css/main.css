@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.container {display: block; margin: 0 auto; width: 95%; max-width: 1200px;}
+.container {display: block; margin: 0 auto 250px; width: 95%; max-width: 1200px;}
 
 /* header */
 header {padding: 250px 0;}
@@ -124,6 +124,42 @@ section.mb_team_wr {}
 .mb_team>ul>li:nth-child(3) .comment_btn {background-color: #a5e2ff;}
 .mb_team>ul>li:last-child .comment_btn {background-color: #ff82cc;}
 
+/* chat */
+.chat_scroll {display: inline-block; margin: 30px 0; padding: 10px 20px; font-size: 18px; font-weight: 600; color: #111; border-radius: 8px; background-color: #7cd7f8; border: 1px solid #7cd7f8;}
+.chat_scroll:hover {color: #7cd7f8; background-color: #111; border: 1px solid #7cd7f8; transition: 0.5s;}
+#chat_wrap {text-align: center;}
+#chat_wrap h3 {margin-bottom: 30px; font-size: 27px; font-weight: 700; color: #111;}
+.chat_con_wrap {border-top: 1px solid rgba(255, 255, 255, 0.22);}
+#today_date {margin: 20px 0;}
+
+.chat_content {position: relative;margin: 0 auto;padding: 30px 0;max-width: 750px;width: 95%;}
+.chat_content .btn_wr {display: flex; justify-content: right; margin: 30px 0 0;}
+.chat_content .btn_wr li a {display: block; margin-left: 15px; padding: 15px 25px; border-radius: 8px}
+.chat_content .close_btn {background-color: #dbdbdb;}
+.chat_content .upload_btn {margin: 0;padding: 0 15px;width: 20%;font-size: 16px;color: #fff;background-color: #25bafd;border-radius: 0 50px 50px 0;border: 0;}
+
+.chat_wr {display: block;}
+.chat_wr ul {margin-bottom: 25px;padding: 17px 15px;}
+#chat_list ul:nth-child(even) {flex-direction: row-reverse;padding: 15px 15px 15px 20px;float: right;background-color: #25baff;border-radius: 100px 0 100px 100px;}
+#chat_list ul:nth-child(even) li {padding: 0 10px 0 0;}
+#chat_list ul:nth-child(even) .chat_des {padding: 0 10px;margin: 8px 0 0;font-size: 17px;font-weight: 600;line-height: 1.3;text-align: right;color: #fff;}
+#chat_list ul:nth-child(even) .date {margin: 5px 0;padding: 0 15px 0;font-size: 14px;font-weight: 500;text-align: right;color: #eee;}
+
+.chat_wr>div ul {display: flex;padding: 15px 15px 15px 20px;width: 70%;background: #f9f9f9;border-radius: 0 100px 100px;}
+.chat_wr>div ul li img {width: 55px;}
+.chat_wr>div ul li:last-child {padding: 0 22px 0 10px;text-align: left;}
+.chat_wr>div ul li:last-child .chat_des {margin: 8px 0 0;font-size: 17px;font-weight: 600;line-height: 1.3;color: #555;}
+.chat_wr>div ul li:last-child .date {margin: 5px 0;font-size: 14px;font-weight: 500;color: #aaa;}
+
+.chat_wr .write_chat {margin: 30px 0 0; text-align: left;}
+.chat_wr .write_chat li {display: flex;  margin-bottom: 20px;}
+.chat_wr .write_chat label {display: none;font-size: 17px;font-weight: 500;color: #555;}
+.chat_wr .write_chat .input_nick {padding: 3px 5px; font-size: 19px; font-weight: 700; border: none; border-bottom: 1px solid #b9b9b9;}
+.chat_wr .write_chat li:last-child input {display: block;padding: 20px;width: 80%;font-size: 15px;line-height: 1.3;color: #a6a6a6;box-sizing: border-box;border: none;border-radius: 100px 0 0 100px;}
+.chat_wr .write_chat .input_nick::placeholder {font-size: 15px; font-weight: 500; color: #a6a6a6;}
+.chat_wr .write_chat li:last-child input::placeholder {font-size: 15px; line-height: 1.3; color: #a6a6a6;}
+
+
 
 /* mobile */
 @media (max-width: 970px){
@@ -180,5 +216,25 @@ section.mb_team_wr {}
     .write_comment .input_nick::placeholder {font-size: 15px;}
     .write_comment li:last-child textarea::placeholder {font-size: 13px;}
 
+    .write_chat label {font-size: 15px;}
+    .write_chat li {width: 100% !important;}
+    .write_chat li:last-child textarea {font-size: 13px;}
+    .write_chat .input_nick {font-size: 15px;}
+    .write_chat .input_nick::placeholder {font-size: 15px;}
+    .write_chat li:last-child textarea::placeholder {font-size: 13px;}
 
+    .chat_scroll {margin: 20px 0; padding: 9px 14px; font-size: 15px;}
+    .chat_wr .write_chat li:last-child input {padding: 15px 0 15px 20px;}
+    .chat_wr .write_chat {padding: 17px 0;}
+    .chat_content .upload_btn {width: 23%; font-size: 15px;}
+    .chat_wr ul {margin-bottom: 20px;}
+    .chat_wr>div ul {padding: 10px 10px 10px 15px; width: 90%;}
+    #chat_list ul:nth-child(even) {padding: 10px 10px 10px 15px; width: 90%;}
+    #chat_list ul:nth-child(even) li {padding: 0 0 0 7px;}
+    .chat_wr>div ul li:last-child .chat_des {font-size: 15px; font-weight: 500;}
+    .chat_wr>div ul li:last-child .date {font-size: 13px; font-weight: 400;}
+    .chat_wr>div ul li img {width: 45px;}
+
+    #chat_list ul:nth-child(even) .chat_des {padding: 0 3px 0 16px;font-size: 15px;font-weight: 500;}
+    #chat_list ul:nth-child(even) .date {padding: 0 8px 0;font-size: 13px;font-weight: 400;}
 }

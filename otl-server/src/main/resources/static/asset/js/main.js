@@ -1,11 +1,13 @@
-/*
+/* 현재 날짜 출력 */
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById("today_date").innerHTML = new Date().toLocaleDateString('ko-KR', options);
+
 // 버튼 클릭 시 commentList 함수 호출, idNum 전달
 $("[id^='commentButton']").click(function () {
     let idValue = $(this).attr("id");
     let idNum = idValue.slice(13);
     commentList(idNum);
 });
-*/
 
 // 버튼 클릭 시 commentWrite 함수 호출, idNum 전달
 $("[id^='commentWrite']").click(function () {
@@ -14,42 +16,37 @@ $("[id^='commentWrite']").click(function () {
     commentWrite(idNum); //
 });
 
-/*
 // 댓글 확인 탭
 async function commentList(idNum) {
     let commentPage = document.getElementById(`commentList${idNum}`);
     commentPage.innerHTML = "";
 
-    // db에서 데이터 가져오기
-    let doc = await getDocs(
-        query(
-            collection(db, "comments"),
-            where("id", "==", idNum),
-            orderBy("date", "desc")
-        )
-    );
-
-    console.log(doc); // 디버깅용 로그 3
-
-    // 가져온 데이터 변수로 지정
-    doc.forEach((doc) => {
-        let data = doc.data();
-        let nickname = data['nickname'];
-        let comment = data['comment'];
-        let temp_html = `
+    $.ajax({
+        url: `/api/comments`,
+        type: "GET",
+        contentType: "application/json",
+        success: function(response){
+            response.forEach((comment) => {
+                let temp_html = `
                 <ul>
                     <li><img src="asset/img/anonymous.webp" alt="익명 프로필 이미지"></li>
                     <li>
-                        <div class="nick_name">${nickname}님의 댓글</div>
-                        <div class="comment_des">${comment}</div>
+                        <div class="nick_name">${comment.nickname}님의 댓글</div>
+                        <div class="comment_des">${comment.comment}</div>
                     </li>
                 </ul>
                 `;
-        // id가 commentList로 시작하는 html태그에 추가
-        $(`#commentList${idNum}`).append(temp_html);
-    });
+                $(`#commentList0${comment.userId}`).append(temp_html);
+                console.log(comment);
+            });
+
+        },
+        error: function(e){
+            console.error("댓글 실패요", e);
+        }
+    })
 }
-*/
+
 
 // 댓글 작성 탭
 async function commentWrite(idNum) {
@@ -60,22 +57,21 @@ async function commentWrite(idNum) {
         alert("닉네임과 댓글 내용을 모두 입력해주세요.");
         return;
     }
-
     $.ajax({
         url: `/api/comments`,
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
-            id: idNum,
+            userId: idNum,
             nickname: nickname,
             comment: comment
         }),
         success: function (response) {
-            console.log("댓글 등록");
+            commentList(idNum);
             $(`#comment${idNum}`).val("");
         },
-        error: function (err) {
-            console.log("에러");
+        error: function (e) {
+            console.log("에러", e);
         },
     });
 }
