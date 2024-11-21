@@ -4,31 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c9238d-cb39-4efa-bd08-d1ffae02f8e8" name="변경" comment="comment_write">
-      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Comment/CommentRepository.java" afterDir="false" />
+    <list default="true" id="35c9238d-cb39-4efa-bd08-d1ffae02f8e8" name="변경" comment="comment_done">
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Chat/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Chat/ChatDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Chat/ChatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Chat/ChatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Chat/WebSocketConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/otl-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/otl-server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/libs/otl-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/static/asset/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/resources/main/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Comment/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Comment/CommentDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/java/com/example/otl_server/controller/Comment/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/static/asset/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/otl-server/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/otl-server/src/test/java/com/example/otl_server/OtlServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/otl-server/src/test/java/com/example/otl_server/OtlServerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +36,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -127,7 +121,8 @@
       <workItem from="1732093880138" duration="650000" />
       <workItem from="1732102572420" duration="3000" />
       <workItem from="1732163378015" duration="3076000" />
-      <workItem from="1732168954085" duration="9393000" />
+      <workItem from="1732168954085" duration="10155000" />
+      <workItem from="1732197664023" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="why_an_dw_em_TT">
       <option name="closed" value="true" />
@@ -145,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732093927670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="comment_done">
+      <option name="closed" value="true" />
+      <created>1732184949273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732184949273</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="why_an_dw_em_TT" />
     <MESSAGE value="comment_write" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment_write" />
+    <MESSAGE value="comment_done" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment_done" />
   </component>
 </project>

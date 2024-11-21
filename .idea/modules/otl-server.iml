@@ -123,5 +123,53 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spring-boot-starter-websocket">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-websocket-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-web-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-autoconfigure-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-logging-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/logback-classic-1.5.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/logback-core-1.5.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/slf4j-api-2.0.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/log4j-to-slf4j-2.23.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/log4j-api-2.23.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jul-to-slf4j-2.0.16.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jakarta.annotation-api-2.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/snakeyaml-2.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-json-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jackson-databind-2.17.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jackson-annotations-2.17.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jackson-core-2.17.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jackson-datatype-jdk8-2.17.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jackson-datatype-jsr310-2.17.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/jackson-module-parameter-names-2.17.3.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-boot-starter-tomcat-3.3.6.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/tomcat-embed-core-10.1.33.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/tomcat-embed-el-10.1.33.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/tomcat-embed-websocket-10.1.33.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-web-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/micrometer-observation-1.12.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/micrometer-commons-1.12.12.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-webmvc-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-aop-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-expression-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-messaging-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-beans-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-core-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-jcl-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-websocket-6.1.15.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/spring-context-6.1.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="stomp.js" level="application" />
+    <orderEntry type="library" name="sockjs-client" level="application" />
+    <orderEntry type="library" name="pretendardvariable-dynamic-subset" level="application" />
   </component>
 </module>
