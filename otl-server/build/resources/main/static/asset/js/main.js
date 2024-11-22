@@ -23,7 +23,7 @@ function showChat(chat) {
             </li>
         </ul>
         `
-    $(`#chat_list`).append(temp_html);
+    $(`#chat_list`).prepend(temp_html);
 
 }
 
@@ -57,13 +57,28 @@ function sendChat() {
 // 메시지 보내기 버튼 클릭
 document.addEventListener('DOMContentLoaded', () => {
     connect();
-    document.getElementById("chat_send").addEventListener('click', () => {
+    document.getElementById("chatMessage").addEventListener('keydown', (event) => {
         const input = document.getElementById("chatMessage");
-        if (input.value.trim() === '') {
-            alert("너 비어있잖아...");
-            return;
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (input.value.trim() === '') {
+                alert("너 비어있잖아...");
+                return;
+            }
+            sendChat();
         }
-        sendChat();
+    });
+
+    document.getElementById("chat_send").addEventListener('click', (event) => {
+        const input = document.getElementById("chatMessage");
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (input.value.trim() === '') {
+                alert("너 비어있잖아...");
+                return;
+            }
+            sendChat();
+        }
     });
 });
 
@@ -89,12 +104,12 @@ $("[id^='commentWrite']").click(function () {
 async function commentList(idNum) {
     let commentPage = document.getElementById(`commentList${idNum}`);
     commentPage.innerHTML = "";
-
     $.ajax({
         url: `/api/comments`,
         type: "GET",
         contentType: "application/json",
         success: function(response){
+            response.sort((a, b) => b.id - a.id);
             response.forEach((comment) => {
                 let temp_html = `
                 <ul>
