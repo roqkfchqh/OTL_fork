@@ -10,7 +10,7 @@ public class ChatService {
         this.chatRepository = chatRepository;
     }
 
-    public ChatDb saveMessage(ChatDb chat) {
+    public ChatDb sendChat(ChatDb chat) {
         return chatRepository.save(chat);
     }
 }

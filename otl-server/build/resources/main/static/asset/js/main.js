@@ -1,64 +1,71 @@
-import { io } from "socket.io-client"
-
-const socket = io("http://localhost:8080/ws",{
-    transports: ["websocket"],
-});
-
-socket.on("connect", () => {
-    console.log("websocket 연결됨");
-});
-
-socket.on("/topic/public", (chat) => {
-    console.log("채팅", chat)
-})
-
 let stompClient = null;
 
+function getFormatDate(date){// 필요하지 않을 경우 삭제 가능
+    let month = (1 + date.getMonth()).toString().padStart(2, '0'); // 1월이 0이므로 +1
+    let day = date.getDate().toString().padStart(2, '0'); // 두 자리로 유지
+    let hours = date.getHours().toString().padStart(2, '0'); // 시
+    let minutes = date.getMinutes().toString().padStart(2, '0'); // 분
+    // '-' 추가하여 yyyy-mm-dd 형태 생성 가능
+    return `${month}-${day} ${hours}:${minutes}`;
+}
+
+// 서버에서 받은 메시지 출력
+function showChat(chat) {
+    // 메시지를 화면에 추가하는 로직
+    console.log("받은 메시지: ", chat);
+
+    let temp_html = `
+        <ul>
+            <li><img src="asset/img/anonymous.webp" alt="익명 프로필 이미지"></li>
+            <li>
+                <div class="chat_des">${chat.chat}</div>
+                <div class="date">${getFormatDate(new Date(chat.date))}</div>
+            </li>
+        </ul>
+        `
+    $(`#chat_list`).append(temp_html);
+
+}
+
 function connect() {
-    const socket = new SockJS('/ws'); // '/ws'는 Spring 서버의 WebSocket 엔드포인트
+    let socket = new SockJS('/ws');
     stompClient = Stomp.over(socket);
 
-    stompClient.connect({}, function (frame) {
-        console.log('Connected: ' + frame);
+    stompClient.connect({}, (frame) => {
+        console.log("연결됐음" + frame);
 
-        // 서버에서 보내는 메시지 구독
-        stompClient.subscribe('/topic/public', function (message) {
-            showMessage(JSON.parse(message.body)); // 메시지를 처리하는 함수 호출
+        stompClient.subscribe('/topic/public', (message) => {
+            const chat = JSON.parse(message.body);
+            console.log(message)
+            console.log(message.body)
+            showChat(chat);
+
         });
     });
 }
 
-function sendMessage() {
+function sendChat() {
     const chatMessage = {
-        id: id,
-        comment: $(`#chatMessage`).val(),
-        date: Date()
+        chat: $(`#chatMessage`).val(),
+        date: new Date(),
     };
 
-    stompClient.send("/app/chat.sendMessage", {}, JSON.stringify(chatMessage));
-    $(`#chatMessage`).val(""); // 메시지 입력 필드 초기화
+    stompClient.send('/app/chat.sendChat', {}, JSON.stringify(chatMessage));
+    $(`#chatMessage`).val("");
 }
 
-// 페이지 로드 시 WebSocket 연결
-$(document).ready(function () {
+// 메시지 보내기 버튼 클릭
+document.addEventListener('DOMContentLoaded', () => {
     connect();
-
-    // 메시지 보내기 버튼 클릭 이벤트
-    $("#chat_send").click(function () {
-        if (!$(`#chatMessage`).val()) {
-            alert("비어있잖아...");
+    document.getElementById("chat_send").addEventListener('click', () => {
+        const input = document.getElementById("chatMessage");
+        if (input.value.trim() === '') {
+            alert("너 비어있잖아...");
             return;
         }
-        sendMessage();
+        sendChat();
     });
 });
-
-// 서버에서 받은 메시지 출력
-function showMessage(message) {
-    // 메시지를 화면에 추가하는 로직
-    console.log("받은 메시지: ", message);
-}
-
 
 /* 현재 날짜 출력 */
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

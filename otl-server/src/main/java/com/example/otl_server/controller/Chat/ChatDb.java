@@ -11,14 +11,26 @@ public class ChatDb {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String message;
+    private String chat;
     private String date;
 
     protected ChatDb(){}
 
-    public ChatDb(Long id, String message, String date) {
+    public ChatDb(Long id, String chat, String date) {
         this.id = id;
-        this.message = message;
+        this.chat = chat;
         this.date = date;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getChat() {
+        return chat;
+    }
+
+    public String getDate() {
+        return date;
     }
 }
